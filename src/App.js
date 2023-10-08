@@ -1,23 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
+import ItemListContainer from './components/ItemListContainer/ItemListContainer';
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Nosotros from '../src/components/Nosotros/Nosotros'
+import Contactanos from '../src/components/Contactanos/Contactanos'
+import Encuentranos from '../src/components/Encuentranos/Encuentranos'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <BrowserRouter>
+
+        <Routes>
+          <Route path="/" element={ItemListContainer}/>
+          <Route path="/Nosotros" element={Nosotros}/>
+          <Route path="/Contactanos" element={Contactanos}/>
+          <Route path="/Encuentranos" element={Encuentranos}/>
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
