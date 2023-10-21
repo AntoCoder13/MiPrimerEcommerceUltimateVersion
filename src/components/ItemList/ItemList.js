@@ -1,5 +1,5 @@
 import Item from "../Item/Item";
-import { toCapital } from "../helpers/toCapital";
+import { toCapital } from "../../helpers/toCapital";
 
 const ItemList = ( {productos, product_name} ) => {
 
