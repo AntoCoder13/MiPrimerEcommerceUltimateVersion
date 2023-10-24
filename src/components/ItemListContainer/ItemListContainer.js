@@ -13,6 +13,7 @@ const ItemListContainer = () => {
     useEffect(() => {
 
       const productosRef = collection(db, "productos");
+      //verificar categoria o category
       const q = categoria ? query(productosRef, where("categoria", "==", categoria)) : productosRef;
 
       getDocs(q)

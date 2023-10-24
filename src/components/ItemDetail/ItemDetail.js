@@ -1,7 +1,7 @@
 import { useContext, useState } from "react";
-import { toCapital } from "../helpers/toCapital"
+import { toCapital } from "../../helpers/toCapital"
 import ItemCount from "../ItemCount/ItemCount"
-import { CartContext } from "../context/CartContext";
+import { CartContext } from "../../context/CartContext";
 
 const ItemDetail = ( {item} ) => {
 
