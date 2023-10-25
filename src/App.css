@@ -181,3 +181,8 @@
     border: 2px solid var(--clr-main);
     outline: 2px solid var(--clr-main);
 }
+
+.containerContacto{
+    margin: 1rem;
+    padding: 1rem;
+}
