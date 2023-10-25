@@ -21,12 +21,12 @@ const ItemDetail = ( {item} ) => {
   return (
     <div className="container">
         <div className="producto-detalle">
-            <img src={item.brand} alt={item.product_name} />
+            <img src={item.brand} alt={item.titulo} />
             <div>
-                <h3 className="titulo">{item.product_name}</h3>
+                <h3 className="titulo">{item.titulo}</h3>
                 <p className="descripcion">{item.description}</p>
-                <p className="categoria">Categoría: {toCapital(item.category)}</p>
-                <p className="precio">${item.price}</p>
+                <p className="categoria">Categoría: {toCapital(item.categoria)}</p>
+                <p className="precio">${item.precio}</p>
                 <ItemCount
                   cantidad={cantidad}
                   handleSumar={handleSumar}
