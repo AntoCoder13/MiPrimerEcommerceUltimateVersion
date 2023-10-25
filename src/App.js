@@ -14,8 +14,8 @@ function App() {
   return (
     <div>
       <CartProvider>
-        <NavBar>
         <BrowserRouter>
+        <NavBar/>
           <Routes>
             <Route path="/" element={<ItemListContainer />} />
             <Route path="/Nosotros" element={<Nosotros />} />
@@ -28,7 +28,6 @@ function App() {
             <Route path="/checkout" element={<Checkout />} />
           </Routes>
         </BrowserRouter>
-        </NavBar>
       </CartProvider>
     </div>
   );
