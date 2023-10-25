@@ -7,9 +7,9 @@ const Item = ( {producto} ) => {
     <div className="producto">
         <img src={producto.brand} alt={producto.titulo} />
         <div>
-            <h4>{producto.titulo}</h4>
-            <p>Precio: ${producto.precio}</p>
-            <p>Categoría: {toCapital(producto.categoria)}</p>
+            <h4>{producto.product_name}</h4>
+            <p>Precio: ${producto.price}</p>
+            <p>Categoría: {toCapital(producto.category)}</p>
             <Link className="ver-mas" to={`/item/${producto.id}`}>Ver más</Link>
         </div>
     </div>
