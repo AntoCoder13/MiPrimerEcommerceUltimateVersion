@@ -21,7 +21,7 @@ function App() {
             <Route path="/Nosotros" element={<Nosotros />} />
             <Route path="/Contactanos" element={<Contactanos />} />
             <Route path="/Encuentranos" element={<Encuentranos />} />
-            <Route path="/item/id:" element={<ItemDetailContainer />} />
+            <Route path="/item/:id" element={<ItemDetailContainer />} />
             <Route path="/productos" element={<ItemListContainer />} />
             <Route path="/productos/:categoria" element={<ItemListContainer />} />
             <Route path="/carrito" element={<Carrito />} />
