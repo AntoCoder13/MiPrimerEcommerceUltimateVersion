@@ -6,6 +6,10 @@
     font-family: 'Ubuntu', sans-serif;
 }
 
+.body{
+    background-color: rgb(250, 242, 230);
+}
+
 :root {
     --clr-main: #f764b5;
     --clr-main-light: #efdaf9;
@@ -43,13 +47,15 @@
 }
 
 .menu-link {
+    transition: 0.5s;
     text-decoration: none;
     color: black;
     font-size: 1.2rem;
 }
 
 .menu-link:hover {
-    text-decoration: underline;
+    font-size: 120%;
+    color: white;
 }
 
 .productos {
@@ -81,6 +87,7 @@
 }
 
 .producto .ver-mas {
+    transition: 0.5s;
     text-decoration: none;
     background-color: var(--clr-main);
     color: white;
@@ -94,6 +101,7 @@
 }
 
 .producto .ver-mas:hover {
+    transition: 0.5s;
     background-color: black;
     color: white;
 }
@@ -235,4 +243,13 @@
 }
 .nosotros .texto-nosotros{
     text-align: center;
+}
+
+.menu .submenu {
+    color: purple;
+    font-weight: bold;
+}
+
+.submenu:hover {
+    color: white;
 }
