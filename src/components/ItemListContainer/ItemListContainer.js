@@ -15,6 +15,7 @@ const ItemListContainer = () => {
       const productosRef = collection(db, "productos");
 
       const q = categoria ? query(productosRef, where("categoria", "==", categoria)) : productosRef;
+      categoria ? setTitulo(categoria) : setTitulo('productos')
 
       getDocs(q)
         .then((resp) => {
